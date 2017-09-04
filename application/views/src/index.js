@@ -5,13 +5,14 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
 import Board from './board.js';
+import Map from './mapContainer.js';
 
 class Game extends React.Component {
     render() {
         return (
             <div className="game">
-                <div className="game-board">
-                    <Board />
+                <div className="map">
+                    <Map/>
                 </div>
                 <div className="game-info">
                     <div>{/* status */}</div>
@@ -26,5 +27,5 @@ class Game extends React.Component {
 
 ReactDOM.render(
     <Game />,
-    document.getElementById('root')
+    document.getElementById('container')
 );
